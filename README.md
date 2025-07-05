@@ -32,10 +32,10 @@ cd frontend && npm install
 cd ../backend && npm install
 
 # Start the server
-cd frontend && node index.js
+cd backend && node index.js
 
 # Start the client
-cd client && npm start
+cd frontend && npm start
 ```
 ## Technologies
 
