@@ -87,7 +87,6 @@ cd client && npm start
 
 **📈 Analytics**
 - Team utilization bar chart using Recharts
-- Available vs Allocated capacity per engineer
 
 ## API Reference
 
@@ -106,7 +105,7 @@ cd client && npm start
 **Assignments**
 - `GET /api/assignments`
 - `POST /api/assignments`
-- `PUT /api/assignments/:id`
+- `POST /api/assignments/:id`
 - `DELETE /api/assignments/:id`
 
 ### AI Usage
@@ -120,12 +119,18 @@ cd client && npm start
 - Used AI to optimize form validation logic and reduce redundant code
 
 **Challenges**
-- AI sometimes returned incorrect assumptions (e.g., old shadcn, Form syntax)
-- Solved by cross-checking with official docs
+- ChatGPT occasionally provided outdated code (e.g., legacy ShadCN UI or deprecated react-hook-form syntax).
+- Some assumptions in the responses were incorrect or overly generic, requiring manual correction.
+- Responses were sometimes lengthy or verbose, requiring effort to extract the relevant parts.
+  
 
 **Validation Approach**
-Fully reviewed and modified all AI-generated code
+- Thoroughly reviewed all AI-generated code snippets and suggestions for accuracy, modern best practices, and compatibility with the MERN stack.
 Manually tested all components and API endpoints
+- Optimized and refactored AI-generated logic to align with project standards and conventions.
+- Manually tested token validation, protected routes, and role-based access on both client and server side.
+- Validated backend error responses and frontend toast alerts or dialogs.
+
 
 ## Contact
 For bugs or feature requests, please reach out to manojreddy2571@gmail.com
